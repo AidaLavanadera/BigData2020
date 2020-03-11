@@ -1,9 +1,7 @@
 import itertools
 def get_grid_iterable():
     param_grid = {'learning_rate': [float(v) for v in np.arange(0.01, 0.25, 0.01)],
-                  #'colsample_bytree': [float(v) for v in np.arange(0.8, 1.01, 0.1)],
                   'subsample': [float(v) for v in np.arange(0.5, 1.01, 0.1)],
-                  #'n_estimators': [int(v) for v in np.arange(100, 3000, 100)],
                   'reg_alpha': [float(v) for v in np.arange(0.01, 0.5, 0.05)],
                   'max_depth': [int(v) for v in np.arange(3, 14, 1)],
                   'gamma': [int(v) for v in np.arange(0, 10, 2)]
